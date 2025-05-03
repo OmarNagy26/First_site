@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('pexels-aqtai-2233416.jpg'); /* استبدل الرابط برابط الخلفية الإسلامية المناسبة */
+    background-size: cover;
+    background-attachment: fixed;
+    color: #f1f1f1;
+    font-family: Beiruti;
+    line-height: 1.6;
+}
+
+h1 {
+    color: #000000;
+    text-align: center;
+    text-shadow: 0 0 20px black;
+    padding: 20px 0;
+    margin-bottom: 10px;
+    margin: 0 20px 0 20px;
+    font-size: 3.2em;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+header {
+    background-color:  rgba(251, 217, 0, 0.865) ;
+    padding: 10px;
+    margin: 0 20px 0 20px;
+    border-radius: 20px;
+    margin-top: 50px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 5px 18px rgb(0, 0, 0);
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.main-content {
+    max-width: 100%;
+    height: fit-content;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: rgba(61, 61, 61, 0.663);
+    border-radius: 20px;
+    box-shadow: 0 5px 18px rgb(0, 0, 0);
+    animation: fadeIn 1.5s ease-in-out;
+    text-align: center;
+}
+
+
+img {
+    width: 200px;
+    height: 300px;
+    padding: 0;
+    margin: 6px;
+    border: 3px solid rgba(251, 217, 0, 0.865) ;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 5px 18px rgb(0, 0, 0);
+
+}
+
+img:hover {
+    transform: scale(1.07);
+}
+
+@media (max-width: 956px) {
+    .main-content img {
+        width: 30%;
+    }
+}
+
+@media (max-width: 762px) {
+    .main-content img {
+        width: 27%;
+        height: 290px;
+    }
+}
+
+@media (max-width: 747px) {
+    .main-content img {
+        width: 27%;
+        height: 250px;
+    }
+}
+
+@media (max-width: 580px) {
+    .main-content img {
+        width: 27%;
+        height: 220px;
+        border: 2px solid rgba(251, 217, 0, 0.865);
+    }
+
+    
+}
+
+@media (max-width: 500px) {
+    .main-content img {
+        width: 42%;
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 2.6em;
+    }
+}
+
+@media (max-width: 470px) {
+    .main-content img {
+        width: 42%;
+        height: 170px;
+    }
+}
+
+@media (max-width: 432px) {
+    .main-content img {
+        width: 42%;
+        height: 150px;
+    }
+
+    h1 {
+        font-size: 2.3em;
+    }
+}
+
+@media (max-width: 390px) {
+    .main-content img {
+        height: 150px;
+        border: 1px solid rgba(251, 217, 0, 0.865);
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+}
+
+@media (max-width: 355px) {
+    .main-content img {
+        height: 160px;
+        width: 37%;
+    }
+
+    h1 {
+        font-size: 1.4em;
+    }
+
+}
+
+@media (max-width: 288px) {
+    .main-content img {
+        height: 130px;
+        width: 37%;
+    }
+
+    header {
+        padding: 3px;
+    }
+
+    h1 {
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width: 276px) {
+    .main-content img {
+        height: 130px;
+        width: 37%;
+    }
+
+    header {
+        padding: 3px;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+}
+
+
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+
+::-webkit-scrollbar-track {
+    background: #000000;
+    border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 220, 0, 0.8);
+    border-radius: 5px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 220, 0, 0.8);
+}
+
+hr {
+    padding: 0;
+    margin: 10px;
+}
+
+
+

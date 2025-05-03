@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('pexels-aqtai-2233416.jpg'); /* استبدل الرابط برابط الخلفية الإسلامية المناسبة */
+    background-size: cover;
+    background-attachment: fixed;
+    color: #f1f1f1;
+    font-family: Beiruti;
+    line-height: 1.6;
+}
+
+h1 {
+    color: #000000;
+    text-align: center;
+    text-shadow: 0 0 20px black;
+    padding: 20px 0;
+    margin-bottom: 10px;
+    margin: 0 20px 0 20px;
+    font-size: 3.2em;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+header {
+    background-color: rgba(251, 217, 0, 0.865);
+    padding: 10px;
+    margin: 0 20px 0 20px;
+    border-radius: 20px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 5px 18px rgb(0, 0, 0);
+    animation: fadeInUp 1s ease-in-out;
+}
+
+
+
+.main-content {
+    max-width: 100%;
+    height: fit-content;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: rgba(61, 61, 61, 0.663);
+    border-radius: 20px;
+    box-shadow: 0 5px 18px rgb(0, 0, 0);
+    animation: fadeIn 1.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content a {
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    width: 50%;
+    box-shadow: 0 5px 18px rgb(0, 0, 0);
+    margin: 10px;
+    text-align: center;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    padding: 5px;
+}
+
+.main-content a:hover {
+    transform: scale(1.1);
+
+}
+
+h2 {
+    font-size: 40px;
+    color:rgba(245, 213, 8, 0.663) ;
+    font-weight: 900;
+}
+
+p {
+    font-size: 20px;
+}
+
+ul {
+    margin-right: 30px;
+}
+
+/* Media Queries */
+@media (max-width: 780px) {
+
+    h2 {
+        font-size: 30px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav.link {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    nav.link a {
+        width: 80%;
+        text-align: center;
+        margin: 5px 0;
+        align-items: center;
+    }
+}
+
+@media (max-width: 370px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    nav.link a {
+        font-size: 20px;
+    }
+    
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* تغيير شكل شريط التمرير الكامل */
+::-webkit-scrollbar {
+    width: 12px; /* عرض شريط التمرير الأفقي */
+    height: 12px; /* ارتفاع شريط التمرير الرأسي */
+}
+
+/* تغيير شكل مسار شريط التمرير */
+::-webkit-scrollbar-track {
+    background: #000000; /* لون مسار شريط التمرير */
+    border-radius: 10px; /* تدوير زوايا المسار */
+}
+
+/* تغيير شكل مقبض شريط التمرير */
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 220, 0, 0.8); /* لون مقبض شريط التمرير */
+    border-radius: 5px; /* تدوير زوايا المقبض */
+}
+
+/* تغيير لون المقبض عند التمرير */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 220, 0, 0.8); /* لون مقبض شريط التمرير عند التمرير */
+}
